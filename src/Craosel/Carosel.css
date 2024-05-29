@@ -1,0 +1,25 @@
+.main{
+    background-image: url('../Assets/shape.png');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+ 
+}
+    /* background-repeat: no-repeat;
+    background-size: cover;
+} */
+.react-heading{
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+}
+.redux{
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+
+}
+.hyper{
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+
+}

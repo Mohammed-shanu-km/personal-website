@@ -1,0 +1,332 @@
+.navbar{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 20px 50px;
+    justify-content: space-between;
+}
+.shanu{
+    color: transparent !important;
+    -webkit-text-stroke: 0.5px #fff !important;
+}
+.navbar a{
+    text-decoration: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+h6{
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+h6{
+    position: relative;
+    text-decoration: none;
+    font-family: "Epilogue", sans-serif;
+  
+    padding: 0 10px;
+
+}
+
+
+h6{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.38px;
+    color: white;
+    transition: all 1s ease;
+    font-family: "Epilogue", sans-serif;
+    letter-spacing: 2px;
+}
+h6{
+    position: relative;
+    text-decoration: none;
+    font-family: "Epilogue", sans-serif;
+    padding: 0 10px;
+
+}
+h6:after{
+  content: "";  
+  position:absolute;
+  background-color: white ;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+
+}
+h6:hover:after{
+    width: 90%;
+
+
+}
+h6:hover{
+    color:white ;
+}
+/* .single:after{
+content: "";  
+  position:absolute;
+  background-color: #378CE7 ;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+  color: #378CE7 ;
+
+} */
+/* .single{
+    color:  #378CE7;
+} */
+
+.navbar input{
+    width: 250px;
+    border: none;
+    background-color: #EDEEEF80;
+    color: #00000066;
+    padding: 10px 25px;
+    padding-right: 50px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24.38px;
+}
+.navbar .login{
+    color: #000000B2;
+    padding: 14px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24.38px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.navbar .signin{
+    background-color: #572DFE;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 14px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24.38px;
+}
+.search-and-btn{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.search-input-div{
+    position: relative;
+}
+.search-and-btn #search-icon{
+    position: absolute;
+    margin-top: 10px;
+    right: 15px;
+    font-size: 25px;
+    color: #00000066;
+}
+.search-and-btn #search-icon:hover{
+    cursor: pointer;
+}
+.signin:hover{
+    background-color: #7e5efa;
+}
+.login:hover{
+    background-color: rgb(227, 233, 233);
+}
+
+.header{
+    width: 100%;
+}
+.mobile-header #hamburger-icon{
+    display: none;
+}
+.nav-links-div{
+    display: flex;
+    gap: 4rem;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    background-color: #1a1a1a; /* Change the background color as needed */
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(38, 37, 37) !important;
+  /* Smooth transition for background color change */
+  }
+  
+  /* Add a class for scrolled state */
+  .header.scrolled {
+   
+    border: 1px soild white; /* Add box shadow when scrolled */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px soild white; 
+   ; /* Adjust padding as needed */
+  }
+  
+  /* Other styles for your navigation elements */
+  /* Adjust as needed */
+
+
+@media (max-width: 640px) {
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        /* padding: 1rem;  */
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-links-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color:#1a1a1a;
+        transform: translateY(-100%);
+        transition: all 0.9s ease;
+        gap: 1rem;
+        position: fixed;
+        z-index: 9;
+    }
+    .mobile-menu{
+        /* margin-top: 0 !important; */
+        transform: translateY(0);
+     
+    }
+    .search-and-btn{
+        flex-direction: column;
+    }
+    .navbar-btn-div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobile-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        z-index: 10;
+        position: fixed;
+        background-color: #1a1a1a;
+    }
+    .mobile-header #hamburger-icon{
+        display: flex;
+        color: white;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 40px;
+        color: #FFFFFF;
+    }
+    .search-input-div{
+        display: none;
+    }
+    .navbar .signin{
+        text-align: center;
+        padding: 6px 14px;
+    }
+    .nav-links a{
+        /* color: #FFFFFF; */
+    }
+    .navbar .login{
+        /* color: #FFFFFF; */
+    }
+     
+}
+@media (max-width: 830px) {
+    
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        padding: 1rem; 
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-links-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1a1a;
+        transform: translateY(-100%);
+        transition: all 0.9s ease;
+        gap: 1rem;
+        position: fixed;
+        z-index: 9;
+    }
+    .mobile-menu{
+        /* margin-top: 0 !important; */
+        transform: translateY(0);
+     
+    }
+    .search-and-btn{
+        flex-direction: column;
+    }
+    .navbar-btn-div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobile-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        z-index: 10;
+        position: fixed;
+        background-color: #1a1a1a;
+    }
+    .mobile-header #hamburger-icon{
+        display: flex;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 40px;
+        color: #FFFFFF;
+    }
+    .search-input-div{
+        display: none;
+    }
+    .navbar .signin{
+        text-align: center;
+        padding: 6px 14px;
+    }
+    .nav-links a{
+        /* color: #FFFFFF; */
+    }
+    .navbar .login{
+        /* color: #FFFFFF; */
+    }
+     
+}
+ 
+ 
+
+ 
+ 
